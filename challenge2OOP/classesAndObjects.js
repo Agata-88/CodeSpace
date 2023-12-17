@@ -9,6 +9,7 @@ class User{
         console.log (`hello, ${this.firstName} ${this.lastName}`);
     }
 }
+
 //Creating object (instance) of the User class
 const user1 = new User("John", "Doe");
 user1.hello()

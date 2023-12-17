@@ -23,6 +23,7 @@ class Admin extends User {
         return "Admin";
     }
 
+    
     //sayHello()method
     sayHello(){
         return `Hello admin, ${this._userName}`;

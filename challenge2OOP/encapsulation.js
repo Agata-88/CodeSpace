@@ -4,18 +4,22 @@ class User {
         this._firstName = firstName;
         this._lastName = lastName;
     }
+
     //Getter method to retrieve fistName
     get firstName(){
         return this._firstName;
     }
+
     //Setter method to set a new value to the firstName
     set firstName(firstName){
         this._firstName = firstName;
     }
+
     //Getter method to retrieve lastName
     get lastName(){
         return this._lastName;
     }
+    
     //setter method to set a new value to the lastName
     set lastName(lastName){
         this._lastName = lastName;
