@@ -23,6 +23,7 @@ class Author extends User {
     super() //calling contructor of the base class
     this.numberOfArticles=numberOfArticles;
    }
+   
     //Calculate score method for Author class.
     calcScores() {
         return this.numberOfArticles * 10 + 20;
