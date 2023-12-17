@@ -1,9 +1,9 @@
-// //traditional function
+// traditional function
 // function sum(num1, num2) {
 //     return num1 + num2
 // }
 
-// //anonymous function
+// anonymous function
 // let sum = function (num1, num2) {
 //     return num1 + num2
 // }

@@ -1,4 +1,4 @@
-// //traditional function
+// traditional function
 
 // function counterFunc(counter) {
 //     if (counter > 100) {

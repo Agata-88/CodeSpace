@@ -1,4 +1,4 @@
-// //traditional function
+// traditional function
 // function greet(name) {
 //     return "Hi " + name+ "!";
 // }

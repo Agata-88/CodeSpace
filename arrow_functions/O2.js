@@ -7,6 +7,7 @@
 // let isEven = function (num) {
 //     return num % 2 === 0;
 // }
+
  //arrow function
  let isEven = num => num % 2 === 0;
 

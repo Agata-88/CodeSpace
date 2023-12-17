@@ -1,9 +1,9 @@
-// //traditional function
+// traditional function
 // function printOnly() {
 //     console.log("printing");
 //   }
 
-// //anonymous function
+// anonymous function
 // let printOnly = function () {
 //     console.log("printing");
 // }
