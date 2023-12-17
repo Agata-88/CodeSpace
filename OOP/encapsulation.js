@@ -9,10 +9,12 @@ class Circle {
     get radius(){
         return this._radius;
     }
+
     //Setters
     set radius(radius){
         this._radius = radius;
     }
+    
     //Methods
     calculateArea(){
         return Math.PI * this._radius **2;

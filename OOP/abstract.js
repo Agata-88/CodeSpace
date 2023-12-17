@@ -15,7 +15,6 @@ class BankAccount{
     calculateInterestRate(){
         console.log("The interest rate is 5%");
     }
-
 }
     // Create concrete class/subclass/child class representing savings account
     class SavingsAccount extends BankAccount {
