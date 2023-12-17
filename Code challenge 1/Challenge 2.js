@@ -3,7 +3,7 @@
 // }
 // console.log(reversedArray([1,2,3,4,5]))
 
-// //anonymous funtion
+// //anonymous function
 // let reversedArray = function (arr) {
 //     return arr.reverse();
 // }

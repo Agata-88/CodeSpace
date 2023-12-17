@@ -11,9 +11,6 @@
 //     return reverseString;
 // }
 
-// //test 
-// console.log(reverseString("Agata"));
-
 // let reverseString = name => {
 //     //splits string into array
 //     let nameString = name.split("");

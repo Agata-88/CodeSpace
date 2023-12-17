@@ -23,7 +23,6 @@ const mostExpensiveItem = array =>{
             mostExpensiveItemObj = array[i];
         }
     }
-
     return mostExpensiveItemObj
 }
 
