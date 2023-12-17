@@ -1,0 +1,47 @@
+class User {
+  constructor() {
+    this.numberOfArticles = 0;
+  }
+    //Getter for number of articles
+    getNumberOfArticles() {
+        return this.numberOfArticles;
+    }
+    //Setter for number of articles
+    setNumberOfArticles(numberOfArticles) {
+        this.numberOfArticles = numberOfArticles;
+    }
+
+    // Calculate score method for parent class.
+    calcScores() {
+        console.log ("Don't have enough data")
+    }
+  }
+
+//Extend the User class to crete a subclass called Author
+class Author extends User {
+   constructor(numberOfArticles){
+    super() //calling contructor of the base class
+    this.numberOfArticles=numberOfArticles;
+   }
+    //Calculate score method for Author class.
+    calcScores() {
+        return this.numberOfArticles * 10 + 20;
+    }
+}
+//Extend the User class to crete a subclass called Editor
+class Editor extends User {
+    constructor(numberOfArticles){
+        super() //calling contructor of the base class
+        this.numberOfArticles=numberOfArticles;
+    }
+//Calculate score method for Author class.
+    calcScores() {
+        return this.numberOfArticles * 6 + 15;
+    }
+}
+
+const author = new Author(8)
+console.log("Points gained by author:" ,author.calcScores());
+
+const editor= new Editor(15)
+console.log("Points gained by editor:" , editor.calcScores());
