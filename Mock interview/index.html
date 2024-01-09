@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number game</title>
+    <script>
+        
+        // Create function to generate random number
+        function getRandomInt(max) {
+        return Math.floor(Math.random() * max +1);
+        }
+
+        // Use getRandomInt function to generate random number from 1 to 10
+        const maxNumber = 10; 
+        const randomNumber = getRandomInt(maxNumber);
+
+        // Create variable to hold the number chosen by the user - this will be a string    
+        var userNumberString = prompt(`Please choose the number between 1 and 10`);
+
+        // Convert string into number using parseInt
+        var userNumber = parseInt(userNumberString);
+
+        // Error message is shown to the user if value entered by user isn't a number, 
+        // if it is smaller than 1, higher than 10, or if field is left blank. 
+        // Wile loop used so user have unlimited attempts to enter number in requested range
+        // after each error message.
+        while (isNaN(userNumber) || userNumber <1 || userNumber >10 || userNumber === "") {
+            alert("Error, please choose number between 1 and 10");
+        
+            // Reassignes value pf userNumberString - this will be a string
+            userNumberString = prompt(`Please choose the number between 1 and 10`);
+            
+            // Parse to the new userNumberString to update the userNumber
+            userNumber = parseInt(userNumberString);
+        }
+
+        // if number chosen by user is the same as randomly generated number, user will see
+        // congratulations message
+        if (userNumber === randomNumber) {
+            alert(`Congratulations, you've won by choosing number ${userNumber}`);
+        }
+
+        // if number chosen by user is smaller than randomly generated number user will see 
+        // relevant message
+        else if (userNumber < randomNumber){
+            alert(`Sorry, you chose ${userNumber}, but number you are looking for is higher`);
+        }
+
+        // if number chosen by user is higher than randomly generated number user will see 
+        // relevant message
+        else if (userNumber > randomNumber){
+            alert(`Sorry, you chose ${userNumber}, but number you are looking for is lower`);
+        }
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
